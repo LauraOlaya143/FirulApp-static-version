@@ -1,0 +1,320 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.251);
+}
+
+.main {
+    padding-top: 120px;
+}
+
+.padding_footer {
+    padding-bottom: 60px;
+}
+
+.tittle_container {
+    display: flex;
+    margin-left: 10px;
+}
+
+.tittle {
+    margin-top: 0px;
+    margin-left: 10px;
+    transition: all 0.5s;
+}
+
+.tittle:hover {
+    color: rgb(37, 150, 144);
+}
+
+.nav {
+    gap: 3rem;
+    margin-right: 20px;
+}
+
+.link_registro {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(31, 205, 184);
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.link_registro:hover {
+    background-color: rgb(75, 235, 235);
+    color: rgb(255, 255, 255);
+}
+
+.text_inicionSesion {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.busqueda_container {
+    display:flex;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.contenedor_img {
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.contenedor_cardExtensed {
+    margin: 0 auto;
+    height: 100%;
+}
+
+.parrafo {
+    text-align: justify;
+    margin: 0 auto;
+    width: 500px;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.parrafo_cartas {
+    text-align: justify;
+    margin: 0 auto;
+    margin-left: 30px;
+}
+
+.img {
+    border-radius: 10px;
+}
+
+.main__contenedor {
+    margin-top: 40px;
+}
+
+.main_inicio_sesion {
+    max-width: 95%;
+    margin: 0 auto;
+    margin-top: -10px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center; 
+    gap: 2rem;
+}
+
+.main_text {
+    margin-top: 30px;
+    justify-content: justify;
+    text-align: justify;
+    width: 100%;
+}
+
+.buscador{
+    display: flex;
+    width: 40%;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 10px;
+    border-bottom:rgb(133, 155, 153) solid 2px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.258);  
+    transition: all 0.5s;  
+}
+
+.buscador_input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: rgba(31, 205, 185, 0);
+}
+
+.buscador:hover{
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.541);
+}
+
+.boton_buscar {
+    width: 50px;
+    height: 30px;
+    margin-right: 20px;
+    background-color: rgba(31, 205, 185, 0);
+    border:rgba(31, 205, 185, 0) solid 4px;
+}
+
+.buscar_icon {
+    font-size: 24px;
+    transition: all 0.5s;
+    color:rgb(31, 205, 184);
+}
+
+.buscar_icon:hover {
+    color:rgb(75, 235, 235);
+}
+
+.contenedor_imagen {
+    width: 90%;
+}
+
+.contenedor_imgCard {
+    margin: 0 auto;
+    padding: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+
+.img_container {
+    width: 100%;
+}
+
+.card_extensed {
+    position:fixed;
+    left: 750px;
+    top: 80px;
+    width: 400px;
+}
+
+.formulario_container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.veterinarias_container{
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 80%;
+}
+
+.text_veterinarias {
+    color:rgb(128, 128, 128);
+    margin: 0 auto;
+    width: 80%;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.icons_veterinarias {
+    text-decoration: none;
+    display: flex;
+    gap: 4rem;
+    margin-left: -50px;
+    margin-bottom: 50px;
+}
+
+.tittle_Formulary {
+    margin-bottom: 50px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding-bottom: 20px;
+}
+
+.tittle_formulary {
+    font-size: 24px;
+    line-height: 1.2em;
+    width: 100%;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    margin: 0 auto;
+}
+
+.subTittle_formulary {
+    font-size: 24px;
+    line-height: 1.2em;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    line-height: 1.2em;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.subTittle_formulary:hover {
+    color: rgb(37, 150, 144);
+}
+
+.formulario_input {
+    height: 40px;
+    font-size: 18px;
+    border: none;
+    background: #ff75ba00;
+    border-bottom: rgb(143, 143, 143) solid 2px;
+    outline: none;
+    transition: all 0.5s;
+}
+
+.formulario_input:focus {
+    border-bottom: 2px solid rgb(75, 235, 235);
+}
+
+.formulario_btn {
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(31, 205, 184);
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.formulario_btn:hover {
+    background-color: rgb(75, 235, 235);
+    color: rgb(255, 255, 255);
+    letter-spacing: 4px;
+}
+
+.formulario_text {
+    display: flex;
+    gap: 1rem;
+}
+
+.linkRegistro_container {
+    width: 55%;
+    margin: 0 auto;
+}
+
+.linkToRegistro {
+    color:rgb(31, 199, 205);
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.linkToRegistro:hover {
+    color: rgb(75, 235, 235);
+}
+
+
+.footer {
+    background-color: #ebebebc7;
+    background: linear-gradient(to right, #ffffff, #d2d7d6);
+    width: 100%;
+    min-height: 40px;
+    bottom: 0;
+    position:fixed;
+}
+
+.footer_letra {
+    font-size: 1rem;
+    text-align: center;
+    padding-top: 10px;
+}
+
