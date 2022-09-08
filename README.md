@@ -1,0 +1,1 @@
+# FirulApp-static-version
