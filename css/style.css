@@ -43,6 +43,10 @@ ul {
     color: rgb(37, 150, 144);
 }
 
+.subtittle {
+    color:rgb(119, 119, 119);
+}
+
 .nav {
     gap: 3rem;
     margin-right: 20px;
@@ -74,10 +78,26 @@ ul {
     align-items: center;
 }
 
+.text_imgFrame {
+    margin-left: 20px;
+}
+
 .contenedor_img {
     height: 500px;
     margin: 0 auto;
     margin-top: 20px;
+}
+
+.contenedor_imgFrame {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.imgFrame {
+    display: inline-block;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
 }
 
 .contenedor_cardExtensed {
@@ -96,11 +116,11 @@ ul {
 .parrafo_cartas {
     text-align: justify;
     margin: 0 auto;
-    margin-left: 30px;
+    margin-left: 50px;
 }
 
 .img {
-    border-radius: 10px;
+    width: 100%;
 }
 
 .main__contenedor {
@@ -113,7 +133,6 @@ ul {
     margin-top: -10px;
     height: 100%;
     display: flex;
-    justify-content: space-between;
     flex-direction: row;
     align-items: center; 
     gap: 2rem;
@@ -214,69 +233,82 @@ ul {
     margin-bottom: 50px;
 }
 
-.wrapper {
-    display: flex;
-    position: relative;
-}
-
-.wrapper .sidebar {
-    position: fixed;
-    width: 200px;
-    height: 100%;
-    background: #2CB6B7;
-    padding: 30px;
-}
-
-.navVertical_tittle{
-    color:azure;
-    text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 30px;
-    transition: all 0.5s;
-}
-
-.navVertical_tittle:hover{
-    text-shadow: 5px 5px 10px rgb(222, 222, 222);
-}
-
-.navVertical_list{
+.card_container {
     margin: 0 auto;
-    margin-top: 70px;
-    padding: 25px;
+    width: 800px;
 }
 
-.navVertical_listItem {
-    color:aliceblue;
-    font-size: 20px;
-    display: block;
+.card {
+    margin: 0 auto;
+    margin-top: 50px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.258);  
+}
+
+.valoracion {
+    margin-right: 20px;
+    margin-top: 130px;
+}
+
+.parrafo_frame {
+    height: 450px;
+    width: 600px;
+}
+
+.icons_frame {
+    color: #0973fd;
+    margin-right: 20px;
+}
+
+.buttons_container {
+    padding: 10px;
+    gap: 30px;
+    align-items:flex-start;
+    border-radius: 5px;
+    border-bottom: 3px solid #8f8f8f;
+    margin-bottom: 60px;
+}
+
+.buttons_frame {
+    color:rgb(0, 0, 0);
+    font-size: 24px;
+    background:#00000000;
+    border: 1px solid #00000000;
     transition: all 0.5s;
 }
 
-.navVertical_listItem_selected {
-    padding-left: 9px;
-    padding-top: 2px;
+.buttons_frame:hover {
+    color:rgb(31, 205, 184);
+}
+
+.labels_container {
+    margin-top: 40px;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+select{
+    border: 1px solid #00000000;
+    border-bottom: 3px solid #8f8f8f;
+    color:rgb(13, 94, 156);
+}
+
+.button_reserva {
+    font-size: 22px;
     width: 60%;
-    height: 35px;
-    background: #ffffff;
-    border-radius: 50px;
-    color: #2CB6B7;
+    border: 1px solid #00000000;
 }
 
-.main_navbarVertical{
-    max-width: 1800px;
-    margin-left: 210px;
+.buttom_reservaContainer {
+    margin-top: 50px;
+    width: 100%;
+    align-items: center;
+    text-align: center;
 }
 
-.navVertical_creditos {
-    width: 70%;
-    position: absolute;
-    bottom: 5px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.navVertical_creditosText {
-    color:rgb(189, 232, 232);
+.text_horario_frame {
+    color:rgb(23, 150, 37);
 }
 
 .tittle_Formulary {
