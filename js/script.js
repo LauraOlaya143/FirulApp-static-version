@@ -2,15 +2,14 @@ const cardContainer = document.getElementById("card_container")
 const tituloConsultaContainer = document.getElementById("titulo_busqueda")
 const busqueda = document.querySelector("#buscador");
 const btn_busqueda = document.querySelector("#btn_busqueda");
-let text = " "
 
 const renderCartas = (array) => {
-    let texto = "Cali Norte"
-    let arrayfiltrado = array.filter((e) => e.lugar == texto)
+    let texto = localStorage.getItem('busquedaValor');
+    let arrayfiltrado = array.filter((e) => e.lugar.toLowerCase() === texto)
     let numBusquedas = arrayfiltrado.length
     tituloConsultaContainer.innerHTML = " ";
     tituloConsultaContainer.innerHTML = `
-                    <h1 class="titulo">${texto}</h1>
+                    <h1 class="titulo">${texto.replace(/\b\w/g, l => l.toUpperCase())}</h1>
                     <h5>${numBusquedas} busquedas encontradas</h5>
     `
     cardContainer.innerHTML = " ";
@@ -53,6 +52,6 @@ traerDatos();
 
 btn_busqueda.addEventListener("click", () => {
     text = busqueda.value.toLowerCase();
-    alert(text)
+    localStorage.setItem('busquedaValor', text);
     window.location.href = "http://127.0.0.1:5500/pages/busquedaClinicas.html";
 })
