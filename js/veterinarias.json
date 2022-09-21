@@ -1,0 +1,23 @@
+[
+    {
+        "id" : 1,
+        "nombre": "veterinaria 1",
+        "lugar" : "Cali Norte",
+        "img": "../img/image1.png",
+        "valoracion": 4.5
+    },
+    {
+        "id" : 2,
+        "nombre": "veterinaria 2",
+        "lugar" : "Bogota",
+        "img": "../img/image2.png",
+        "valoracion": 4
+    },
+    {
+        "id" : 3,
+        "nombre": "veterinaria 3",
+        "lugar" : "Cali Norte",
+        "img": "../img/image3.png",
+        "valoracion": 3.5
+    }
+]
