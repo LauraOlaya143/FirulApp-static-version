@@ -53,7 +53,7 @@ const renderCartas = (array) => {
 }
 
 async function traerDatos() {
-    const respuesta = await fetch('../js/veterinarias.json');
+    const respuesta = await fetch('../veterinarias.json');
     const veterinarias = await respuesta.json();
     renderCartas (veterinarias);
 }
