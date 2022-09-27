@@ -1,23 +1,38 @@
 [
     {
-        "id" : 1,
+        "id" : "1",
         "nombre": "veterinaria 1",
         "lugar" : "Cali Norte",
         "img": "../img/image1.png",
+        "imgLugar" : "../img/image13.png",
+        "direccion" : "Av. 4 Oe. #6-159, Cali, Valle del Cauca",
+        "disponibilidad" : "Abierto las 24 horas",
+        "email" : "veterinariasanbernardo.com",
+        "telefono" : 28926090,
         "valoracion": 4.5
     },
     {
-        "id" : 2,
+        "id" : "2",
         "nombre": "veterinaria 2",
         "lugar" : "Bogota",
         "img": "../img/image2.png",
+        "imgLugar" : "../img/image13.png",
+        "direccion" : "Av. 4 Oe. #6-159, Cali, Valle del Cauca",
+        "disponibilidad" : "Abierto las 24 horas",
+        "email" : "veterinariabuenosaires.com",
+        "telefono" : 28926090,
         "valoracion": 4
     },
     {
-        "id" : 3,
+        "id" : "3",
         "nombre": "veterinaria 3",
         "lugar" : "Cali Norte",
         "img": "../img/image3.png",
+        "imgLugar" : "../img/image13.png",
+        "direccion" : "Av. 4 Oe. #6-159, Cali, Valle del Cauca",
+        "disponibilidad" : "Abierto las 24 horas",
+        "email" : "veterinariasanbenito.com",
+        "telefono" : 28926090,
         "valoracion": 3.5
     }
 ]

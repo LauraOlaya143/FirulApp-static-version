@@ -38,9 +38,9 @@
             </div>
         </nav>
     </header>
-    <main class="main padding_footerFrame">
+    <main class="main padding_footerFrame">    
         <section class="frame_container">
-            <div class="contenedor_imgFrame">
+            <div id="imgFrame" class="contenedor_imgFrame">
                 <div class="frame_container">
                     <div>
                         <img src="../img/image1.png" class="img" alt="icono veterinaria">
@@ -58,34 +58,29 @@
 
             <div class="parrafo parrafo_frame">
                 <div class="buttons_container">
-                    <a class="buttons_frame buttons_frame_active" href="frame1.html">Informacion</a>
-                    <a class="buttons_frame" href="./frame2.html">Opiniones</a>
-                    <!--<button type="button" class="buttons_frame">Informacion</button>
-                    <button type="button" class="buttons_frame">Opiniones</button> -->
+                    <button id="btn_informacion" type="button" class="buttons_frame">Informacion</button>
+                    <button id="btn_opiniones" type="button" class="buttons_frame">Opiniones</button> 
                 </div>
 
-                <div>
-                    <p class="frame_text"><i class="fas fa-map-marker-alt icons_frame"></i>   Av. 4 Oe. #6-159, Cali, Valle del Cauca</p>
-                    <p class="text_horario_frame frame_text"><i class="fas fa-clock icons_frame"></i> Abierto las 24 horas</p>
-                    <p class="frame_text"><i class="fas fa-globe-americas icons_frame"></i> veterinariasanbernardo.com</p>
-                    <p class="frame_text"><i class="fas fa-phone-alt icons_frame"></i> 28926090</p>
+                <div id="parrafo_frame">
+                    
                 </div>
                 
-                <div class="labels_container">
+                <div id="labels_container" class="labels_container">
                     <div>
                         <label class="opcion_label">Tipo de Cita:</label>
-                        <select id="month" class="">
-                            <option value="month" selected disabled>Seleccione una opcion</option>
+                        <select id="tipoCita" class="tipoCita-input">
+                            <option value="tipoCita" selected disabled>Seleccione una opcion</option>
                         </select>
                     </div>
                     <div>
                         <label>Fecha:</label>
-                        <select id="year" class="">
-                            <option value="year" selected disabled>Seleccione una opcion</option>                
+                        <select id="fecha" class="fecha-input">
+                            <option value="fecha" selected disabled>Seleccione una opcion</option>                
                         </select>
                     </div>
                 </div>
-                <div class="buttom_reservaContainer">
+                <div id="btn_reserva" class="buttom_reservaContainer">
                     <button type="button" class="link_registro button_reserva">Reservar Ahora</button>
                 </div>
             </div> 
@@ -95,6 +90,7 @@
         <h5 class="footer_letra">©2022 by FirulApp</h5>
     </footer>
     <!-- boostrap -JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="../js/script2.js"></script>
 </body>
 </html>

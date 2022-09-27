@@ -15,29 +15,39 @@ const renderCartas = (array) => {
     cardContainer.innerHTML = " ";
     
     for (let element of arrayfiltrado) {
-        cardContainer.innerHTML += `
+        const body = document.createElement("div");
+        body.innerHTML = `
         <div class="card mb-3" style="max-width: 650px;">
                         <div class="row g-0">
                             <div class="col-md-4">
                                 <div class="contenedor_imgCard">
-                                    <a href="./frame1.html">
                                         <img src="${element.img}" class="card-img-top" alt="${element.nombre}">
-                                    </a>
                                 </div>
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
-                                    <a href="./frame1.html">
                                         <h5 class="card-title">${element.nombre}</h5>
                                         <div class="text-end valoracion">
                                             <h1 class="calificaciones_puntuacion"><span>⭐</span>${element.valoracion}</h1>
                                         </div>
-                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
         `
+        const boton = document.createElement("div");
+        boton.classList.add("button_verVeterinariaContainer")
+            boton.addEventListener("click", () => {
+                let text = element.id
+                localStorage.removeItem("busquedaID");
+                localStorage.setItem('busquedaID', text);
+                window.location.href = "http://127.0.0.1:5500/pages/frame1.html";
+            });
+            boton.innerHTML = `<button id="btn${element.id}" class="link_registro button_verVeterinaria">Ver Veterinaria</button>`;
+
+            body.appendChild(boton)
+            cardContainer.appendChild(body);
+            
     }
     
 }
@@ -51,6 +61,7 @@ async function traerDatos() {
 traerDatos();
 
 btn_busqueda.addEventListener("click", () => {
+    localStorage.removeItem("busquedaValor");
     text = busqueda.value.toLowerCase();
     localStorage.setItem('busquedaValor', text);
     window.location.href = "http://127.0.0.1:5500/pages/busquedaClinicas.html";
