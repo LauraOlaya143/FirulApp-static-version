@@ -79,7 +79,7 @@ const renderFrame = (array) => {
 }
 
 async function traerDatos() {
-    const respuesta = await fetch('../veterinarias.json');
+    const respuesta = await fetch('../js/veterinarias.json');
     const veterinarias = await respuesta.json();
     btn_informacion.classList.add("buttons_frame_active")
     renderFrame(veterinarias);

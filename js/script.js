@@ -41,7 +41,7 @@ const renderCartas = (array) => {
                 let text = element.id
                 localStorage.removeItem("busquedaID");
                 localStorage.setItem('busquedaID', text);
-                window.location.href = "http://127.0.0.1:5500/pages/frame1.html";
+                location.href = "./frame1.html";
             });
             boton.innerHTML = `<button id="btn${element.id}" class="link_registro button_verVeterinaria">Ver Veterinaria</button>`;
 
@@ -53,7 +53,7 @@ const renderCartas = (array) => {
 }
 
 async function traerDatos() {
-    const respuesta = await fetch('../veterinarias.json');
+    const respuesta = await fetch('../js/veterinarias.json');
     const veterinarias = await respuesta.json();
     renderCartas (veterinarias);
 }
@@ -64,5 +64,5 @@ btn_busqueda.addEventListener("click", () => {
     localStorage.removeItem("busquedaValor");
     text = busqueda.value.toLowerCase();
     localStorage.setItem('busquedaValor', text);
-    window.location.href = "http://127.0.0.1:5500/pages/busquedaClinicas.html";
+    location.href='pages/busquedaClinicas.html'
 })
